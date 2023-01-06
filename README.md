@@ -2,6 +2,8 @@
 
 Use AWS Sagemaker to train a pretrained model that can perform image classification by using the Sagemaker profiling, debugger, hyperparameter tuning and other good ML engineering practices. This can be done on either the provided dog breed classication data set or one of your choice.
 
+This is a project to finetune a pretrained model AWS Sagemaker and the files were created as part as part of the AWS Machine Learning Engineer nanodegree.
+
 ## Project Set Up and Installation
 Enter AWS through the gateway in the course and open SageMaker Studio. 
 Download the starter files.
@@ -22,12 +24,6 @@ For this model I chose to tune the epochs, learning rate and batch size. I did t
 "lr": ContinuousParameter(0.001, 0.1),
 "batch-size": CategoricalParameter([32, 64, 128, 256, 512]),
  "epochs": IntegerParameter(2, 4)
-
-Remember that your README should:
-- Include a screenshot of completed training jobs
-- Logs metrics during the training process
-- Tune at least two hyperparameters
-- Retrieve the best best hyperparameters from all your training jobs
 
 ## Debugging and Profiling
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
@@ -60,5 +56,14 @@ to how I transform images in my model. Then it can be queried with various sampl
 **TODO** Remember to provide a screenshot of the deployed active endpoint in Sagemaker.
 [Screen Shot 2022-12-28 at 12.54.34 PM.png]
 
-## Standout Suggestions
-**TODO (Optional):** This is where you can provide information about any standout suggestions that you have attempted.
+
+## Documents 
+
+[Train and Deploy](train_and_deploy.ipynb) - this file contains the actual code that was ran to train and deploy the machine learning models
+
+[HPO](hpo.py) - this file contains the pytorch code used for the machine image classification model. 
+
+[Train Model](train_model.py) - this file contains the pytorch code used to generate another model based on the best hyperparameters identified using Sagemaker tuning. 
+
+[Inference](inference.py) - this file contains the code used to make inferences on the model deployed with the code from train_model.
+
