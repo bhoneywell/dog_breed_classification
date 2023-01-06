@@ -1,6 +1,6 @@
 # Image Classification using AWS SageMaker
 
-Use AWS Sagemaker to train a pretrained model that can perform image classification by using the Sagemaker profiling, debugger, hyperparameter tuning and other good ML engineering practices. This can be done on either the provided dog breed classication data set or one of your choice.
+Use AWS Sagemaker to finetune a pretrained model that can perform image classification by using the Sagemaker profiling, debugger, hyperparameter tuning and other good ML engineering practices. This can be done on either the provided dog breed classication data set or one of your choice.
 
 This is a project to finetune a pretrained model AWS Sagemaker and the files were created as part as part of the AWS Machine Learning Engineer nanodegree.
 
