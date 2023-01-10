@@ -26,6 +26,7 @@ Give an overview of how you performed model debugging and profiling in Sagemaker
 To perform the model debugging and profiling I had to setup the debugging and profiling rules before running the script. Then I passed in the hook as a variable so it could report on what rules I asked as the model ran. 
 
 [Screen Shot 2022-12-28 at 12.54.34 PM.png]
+![image of debugger + profiling code](debugging.png)
 
 ### Results
 What are the results/insights did you get by profiling/debugging your model?
@@ -43,7 +44,7 @@ This led me to believe I need to look into the weights of my ML model as well as
 The deployed model takes a dog image and gives back a prediction. To query the endpoint the image needs to first be transformed similarly 
 to how I transform images in my model. Then it can be queried with various sample images. 
 
-[Screen Shot 2022-12-28 at 12.54.34 PM.png]
+![image of deployed endpoint](endpoint.png)
 
 ## Documents 
 
